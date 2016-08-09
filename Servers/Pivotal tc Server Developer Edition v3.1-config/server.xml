@@ -16,7 +16,7 @@
             </Realm>
             <Host appBase="webapps" autoDeploy="true" deployOnStartup="true" deployXML="true" name="localhost" unpackWARs="true">
                 <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log." suffix=".txt"/>
-            <Context docBase="CalculatorServlet2" path="/CalculatorServlet2" reloadable="true" source="org.eclipse.jst.jee.server:CalculatorServlet2"/><Context docBase="CalculatorJspVersion" path="/CalculatorJspVersion" reloadable="true" source="org.eclipse.jst.jee.server:CalculatorJspVersion"/><Context docBase="Lab1_Starbucks_3" path="/Lab1_Starbucks_3" reloadable="true" source="org.eclipse.jst.jee.server:Lab1_Starbucks_3"/></Host>
+            <Context docBase="CalculatorJspVersion" path="/CalculatorJspVersion" reloadable="true" source="org.eclipse.jst.jee.server:CalculatorJspVersion"/><Context docBase="Lab1_Starbucks_3" path="/Lab1_Starbucks_3" reloadable="true" source="org.eclipse.jst.jee.server:Lab1_Starbucks_3"/><Context docBase="CalculatorMVC" path="/CalculatorMVC" reloadable="true" source="org.eclipse.jst.jee.server:CalculatorMVC"/></Host>
         </Engine>
         <Connector acceptCount="100" connectionTimeout="20000" executor="tomcatThreadPool" maxKeepAliveRequests="15" port="${bio.http.port}" protocol="org.apache.coyote.http11.Http11Protocol" redirectPort="${bio.https.port}"/>
     </Service>
