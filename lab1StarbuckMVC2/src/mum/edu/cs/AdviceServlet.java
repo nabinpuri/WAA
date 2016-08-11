@@ -38,8 +38,7 @@ public class AdviceServlet extends HttpServlet {
   		DataFacade data = (DataFacade) getServletContext().getAttribute("dataSource");
 		List<String> advice = data.getAdvice(roast);
 		//String adviceOutput = prepareAdviceOutput(roast, advice);
-		
-		RequestDispatcher dispatcher = request.getRequestDispatcher("advice.jsp");
+		RequestDispatcher dispatcher = request.getRequestDispatcher("../advice.jsp");
 		request.setAttribute("list", advice);
         dispatcher.forward(request, response);
 	}

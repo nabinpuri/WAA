@@ -11,8 +11,8 @@
 
 <form >
 
-<input type = "text" name = "input1" size="2" value = "${calculator.input1}" /> + <input type = "text" name = "input2" size="2" value ="${calculator.input2}"/> = <input type = "text" name = "output1" size="2" value = "${calculator.output1}"><br/><br/>
-<input type = "text" name = "input3" size="2" value = "${calculator.input3}" /> + <input type = "text" name = "input4" size="2" value ="${calculator.input4}"/> = <input type = "text" name = "output2" size="2" value = "${calculator.output2}"><br/><br/>
+<input type = "text" name = "input1" size="2" value = "${input1}" /> + <input type = "text" name = "input2" size="2" value ="${input2}"/> = <input type = "text" name = "output1" size="2" value = "${output1}"><br/><br/>
+<input type = "text" name = "input3" size="2" value = "${input3}" /> + <input type = "text" name = "input4" size="2" value ="${input4}"/> = <input type = "text" name = "output2" size="2" value = "${output2}"><br/><br/>
 <input type = "submit" value = "Submit"/><br/>
 
 </form>
