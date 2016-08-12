@@ -23,7 +23,7 @@ public class StarbuckController {
 			return "login";	
 		
 	}
-	@RequestMapping(value={"/","/login"})
+	@RequestMapping(value={"/login"})
  	public String login(HttpServletRequest request, 
 			HttpServletResponse response) {
 		System.out.println("inside input");
