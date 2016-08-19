@@ -54,8 +54,8 @@ public class ProductController {
 
 
 	@RequestMapping(value="/product", method = RequestMethod.POST)
-     public String saveProduct(@ModelAttribute("newproduct")Product product) {
-
+     public String saveProduct(@ModelAttribute("newproducts")Product product, Model model) {
+		//
 /*  Replace method declaration with:
     	// The following will crash and burn because No Product to bind in signature
         public String saveProduct(Model model ) {
@@ -64,8 +64,10 @@ public class ProductController {
 */  
     	Category category = categoryService.getCategory(product.getCategory().getId());
         product.setCategory(category);
-
+System.out.println("procutname="+product.getPrice());
     	productService.save(product);
+    	//model.addAttribute("newproducts", product);
+    	//model.addAttributes("newproduct",product);
     	//model.addAttribute(product);
         return "ProductDetails";
     }
